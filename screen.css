@@ -1,3 +1,235 @@
+figcaption,
+figure,
+header,
+section {
+  display: block;
+  }
+
+
+body,
+dd,
+dl,
+figure {
+  margin: .5;
+  }
+
+img {
+  max-width: 100%;
+  height: auto;
+  }
+
 body {
-  background-color: #f9f;
+  max-width: 60em;
+  padding: 0 1em 1em 1em;
+  margin: auto;
+  color: #096;
+  background: #eee;
+  }
+
+a {
+  color: #900;
+  }
+
+.full-width {
+  margin-right: -1em;
+  margin-left: -1em;
+  }
+
+header {
+  background: #fff;
+  padding: 1em 1em 1em;
 }
+
+header h1 {
+  font: 3.4em futura, sans-serif;
+  margin-top: 0;
+  margin-bottom: 1em;
+  }
+
+header dl {
+  display: inline-block;
+  font: .96em Futura, sans-serif;
+  vertical-align: top;
+  padding-top: .6em;
+  padding-bottom: .6em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  border-left: 3px solid #900;
+  border-right: 3px solid #900;
+  margin-right: 1.5em;
+  margin-left: .4em;
+  }
+
+header dl dt {
+  margin: .25em 0em .25em;
+  }
+
+nav ul {
+  list-style: none;
+  padding-left: 1em;
+  margin-bottom: 2em;
+  }
+
+nav li {
+  display: inline;
+  }
+
+nav li:first-child {
+  margin-right: 2em;
+  }
+
+nav a {
+  display: inline-block;
+  font: 1em Futura, sans-serif;
+  color: #900;
+  text-decoration: none;
+  padding: .5em;
+  }
+
+#product img {
+  vertical-align: middle;
+  }
+
+#product figcaption {
+  padding: .1em .1em;
+  }
+
+#product figcaption small {
+  vertical-align: .1em;
+  }
+
+#product figcaption small {
+  font: .1em Futura;
+  }
+
+section {
+  padding-top: 2em;
+  }
+
+section h2 {
+  font: bold 1.4em "Futura", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 1em;
+  }
+
+section ol,
+section ul {
+  padding-left: 1em;
+  margin-bottom: 1em;
+  }
+
+section li {
+  padding: 1em .5em;
+  border-top: 3px solid #900;
+  margin: 0 1em;
+  }
+
+#ingredients ul {
+  list-style: circle;
+  font: Futura, sans-serif;
+  margin-left: 0em;
+  }
+
+#ingredients li {
+  font: 1em Futura, sans-serif;
+  margin: 0em;
+  }
+
+#directions ol {
+  font: 1em Futura, sans-serif;
+  }
+
+#directions li {
+  font: 1em Futura, sans-serif;
+  margin: 0;
+  }
+
+#directions li p {
+  display: inline;
+  font: normal , sans-serif;
+  margin: 2em 0;
+  }
+
+#directions ol {
+  list-style: decimal inside;
+  }
+
+.return_to_top {
+  text-align: center;
+  }
+
+.return_to_top a{
+display: block;
+font: 1em Futura;
+text-decoration: none;
+padding: 1em;
+  }
+
+.footer {
+text-align: center;
+font: 1em Futura;
+text-decoration: none;
+  }
+
+@media (min-width: 24em) {
+
+  body {
+    background: #eee;
+    }
+
+   .recipe {
+    max-width: 19.9375em;
+    background: #eee;
+    padding: 0 1em 1em;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+    margin: 5% auto;
+    overflow: hidden;
+    }
+
+  @media (min-width: 60em) {
+
+  .recipe {
+    max-width: none;
+    }
+
+  header,
+  section {
+    float: left;
+    }
+
+  header {
+    width: 30%;
+    }
+
+  #ingredients {
+    width: 38%;
+    margin-left: 5%;
+    }
+
+  #directions {
+    width: 24%;
+    margin-left: 3%;
+    }
+
+  header dl {
+    margin-bottom: 1.5em;
+    }
+
+  nav,
+  .return_to_top {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    /* clear floats */
+    clear: both;
+    }
